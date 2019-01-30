@@ -9,7 +9,7 @@ const Nav = ({user, getUser}) =>{
 			{user.length?
 			<div>
 			  <NavItem><NavLink to='/profile'>Profile</NavLink></NavItem>
-			  <NavItem><NavLink to='/signout'>Signout</NavLink>Components</NavItem>
+			  <NavItem><NavLink to='/signout'>Signout</NavLink></NavItem>
 			</div>
 			  :
 			<div>
