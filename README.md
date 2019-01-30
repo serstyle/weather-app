@@ -1,0 +1,1 @@
+Error Boundary doesn t work 
