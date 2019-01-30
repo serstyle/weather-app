@@ -8,7 +8,7 @@ const Nav = ({user, getUser}) =>{
 		<Navbar brand='Weather app' right>
 			{user.length?
 			<div>
-			  <NavItem><NavLink to='/profile'>Profile</NavLink></NavItem>
+			 <NavLink to='/profile'> <NavItem>Profile</NavItem></NavLink>
 			  <NavItem><NavLink to='/signout'>Signout</NavLink></NavItem>
 			</div>
 			  :
