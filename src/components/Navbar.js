@@ -5,7 +5,7 @@ import { NavItem, Navbar } from 'react-materialize'
 
 const Nav = ({user, getUser}) =>{
 	return(
-		<Navbar brand='Weather app' to='/' right>
+		<Navbar brand='Weather app' right>
 			{user.length?
 			<div>
 			  <NavItem><NavLink to='/profile'>Profile</NavLink></NavItem>
