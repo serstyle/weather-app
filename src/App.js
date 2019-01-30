@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import Main from './Main'
 import SignIn from './components/SignIn'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
-import Navbar from './components/Navbar'
+import Nav from './components/Navbar'
 import SignOut from './components/SignOut'
 import Register from './components/Register'
 import Profile from './components/Profile'
@@ -29,7 +29,7 @@ class App extends Component{
 		return(
 			<BrowserRouter>
 				<div>
-					<Navbar user={this.state.user.name} getUser={this.getUser}/>
+					<Nav user={this.state.user.name} getUser={this.getUser}/>
 					<Switch>
 						<Route exact path='/' render={(props) => <Main {...props} user={this.state.user} />} />
 						<Route path= '/signin' render={(props) => <SignIn {...props} getUser={this.getUser} />} />
