@@ -8,7 +8,7 @@ class Main extends Component {
   state = {
     city: this.props.user.city,
     currentTemp: '',
-    currentCity: '',
+    currentCity: this.props.user.city,
     user:this.props.user,
     err:false
   }
@@ -23,12 +23,10 @@ class Main extends Component {
       })
     .then(res=> res.json())
     .then(data=> {
-      console.log(data)
-      if(data.name.length){
         this.setState({
           currentTemp: Math.floor(data.main.temp),
           currentCity: data.name
-        })}
+        })
     })
     .catch(error=> {if(error){this.setState({err:true})}})
   
