@@ -10,7 +10,7 @@ class Main extends Component {
     currentTemp: '',
     currentWeath: '',
     currentIcon: '',
-    currentCity: this.props.user.city,
+    currentCity: '',
     user:this.props.user,
     err:false
   }
