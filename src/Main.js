@@ -8,6 +8,8 @@ class Main extends Component {
   state = {
     city: this.props.user.city,
     currentTemp: '',
+    currentWeath: '',
+    currentIcon: '',
     currentCity: this.props.user.city,
     user:this.props.user,
     err:false
@@ -23,9 +25,12 @@ class Main extends Component {
       })
     .then(res=> res.json())
     .then(data=> {
+        console.log(data)
         this.setState({
           currentTemp: Math.floor(data.main.temp),
-          currentCity: data.name
+          currentCity: data.name,
+          currentWeath: data.weather[0].main,
+          currentIcon: 'http://openweathermap.org/img/w/'+ data.weather[0].icon + '.png'
         })
     })
     .catch(error=> {if(error){this.setState({err:true})}})
@@ -46,6 +51,8 @@ class Main extends Component {
         this.setState({
           currentTemp: Math.floor(data.main.temp),
           currentCity: data.name,
+          currentWeath: data.weather[0].main,
+          currentIcon: 'http://openweathermap.org/img/w/'+ data.weather[0].icon + '.png',
           err:false
         })
       })
@@ -82,6 +89,8 @@ class Main extends Component {
             <Home 
             city={this.state.currentCity}
             currentTemp={this.state.currentTemp}
+            currentWeath={this.state.currentWeath}
+            currentIcon={this.state.currentIcon}
             name={this.state.user.name}
             />
 

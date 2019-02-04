@@ -7,7 +7,7 @@ import SignOut from './components/SignOut'
 import Register from './components/Register'
 import Profile from './components/Profile'
 
-// import dataCity from './dataCity'
+
 
 class App extends Component{
 	state = {

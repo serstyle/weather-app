@@ -5,10 +5,10 @@ import { NavItem, Navbar } from 'react-materialize'
 
 const Nav = ({user, getUser}) =>{
 	return(
-		<Navbar brand='Weather app' right>
+		<Navbar className='blue' brand='Weather app' right>
 			{user.length?
 			<div>
-			 <NavLink to='/profile'> <NavItem>Profile</NavItem></NavLink>
+			  <NavItem><NavLink to='/profile'>Profile</NavLink></NavItem>
 			  <NavItem><NavLink to='/signout'>Signout</NavLink></NavItem>
 			</div>
 			  :
