@@ -55,7 +55,7 @@ class Profile extends Component{
 
 	render(){
 		if(!this.state.isAuth){
-			return(<Redirect to='/' />)}
+			return(<Redirect to='/weather-app' />)}
 
 
 		return(

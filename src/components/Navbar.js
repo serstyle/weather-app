@@ -8,13 +8,13 @@ const Nav = ({user, getUser}) =>{
 		<Navbar className='blue' brand='Weather app' right>
 			{user.length?
 			<div>
-			  <NavItem><NavLink to='/profile'>Profile</NavLink></NavItem>
-			  <NavItem><NavLink to='/signout'>Signout</NavLink></NavItem>
+			  <NavItem><NavLink to='/weather-app/profile'>Profile</NavLink></NavItem>
+			  <NavItem><NavLink to='/weather-app/signout'>Signout</NavLink></NavItem>
 			</div>
 			  :
 			<div>
-			  <NavItem><NavLink to='/register'>Register</NavLink></NavItem>
-			  <NavItem><NavLink to='/signin'>Sign In</NavLink></NavItem>
+			  <NavItem><NavLink to='/weather-app/register'>Register</NavLink></NavItem>
+			  <NavItem><NavLink to='/weather-app/signin'>Sign In</NavLink></NavItem>
 			</div>
 			}
 		</Navbar>
