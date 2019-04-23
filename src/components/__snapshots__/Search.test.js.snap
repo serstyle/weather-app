@@ -1,0 +1,755 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should snapshot component snapshot with this.props.error false 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Search
+    error={false}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <form>
+        <div
+          className="row"
+        >
+          <div
+            className="input-field col s12"
+          >
+            <label>
+              City
+            </label>
+            <input
+              aria-label="search city"
+              type="text"
+            />
+            <button
+              className="waves-effect waves-light btn"
+            >
+              Submit
+            </button>
+          </div>
+        </div>
+      </form>,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          className="row"
+        >
+          <div
+            className="input-field col s12"
+          >
+            <label>
+              City
+            </label>
+            <input
+              aria-label="search city"
+              type="text"
+            />
+            <button
+              className="waves-effect waves-light btn"
+            >
+              Submit
+            </button>
+          </div>
+        </div>,
+        "onSubmit": undefined,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <div
+            className="input-field col s12"
+          >
+            <label>
+              City
+            </label>
+            <input
+              aria-label="search city"
+              type="text"
+            />
+            <button
+              className="waves-effect waves-light btn"
+            >
+              Submit
+            </button>
+          </div>,
+          "className": "row",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <label>
+                City
+              </label>,
+              <input
+                aria-label="search city"
+                type="text"
+              />,
+              null,
+              <button
+                className="waves-effect waves-light btn"
+              >
+                Submit
+              </button>,
+            ],
+            "className": "input-field col s12",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "City",
+              },
+              "ref": null,
+              "rendered": "City",
+              "type": "label",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "aria-label": "search city",
+                "onChange": undefined,
+                "type": "text",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+            null,
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Submit",
+                "className": "waves-effect waves-light btn",
+              },
+              "ref": null,
+              "rendered": "Submit",
+              "type": "button",
+            },
+          ],
+          "type": "div",
+        },
+        "type": "div",
+      },
+      "type": "form",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <form>
+          <div
+            className="row"
+          >
+            <div
+              className="input-field col s12"
+            >
+              <label>
+                City
+              </label>
+              <input
+                aria-label="search city"
+                type="text"
+              />
+              <button
+                className="waves-effect waves-light btn"
+              >
+                Submit
+              </button>
+            </div>
+          </div>
+        </form>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <div
+            className="row"
+          >
+            <div
+              className="input-field col s12"
+            >
+              <label>
+                City
+              </label>
+              <input
+                aria-label="search city"
+                type="text"
+              />
+              <button
+                className="waves-effect waves-light btn"
+              >
+                Submit
+              </button>
+            </div>
+          </div>,
+          "onSubmit": undefined,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <div
+              className="input-field col s12"
+            >
+              <label>
+                City
+              </label>
+              <input
+                aria-label="search city"
+                type="text"
+              />
+              <button
+                className="waves-effect waves-light btn"
+              >
+                Submit
+              </button>
+            </div>,
+            "className": "row",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <label>
+                  City
+                </label>,
+                <input
+                  aria-label="search city"
+                  type="text"
+                />,
+                null,
+                <button
+                  className="waves-effect waves-light btn"
+                >
+                  Submit
+                </button>,
+              ],
+              "className": "input-field col s12",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "City",
+                },
+                "ref": null,
+                "rendered": "City",
+                "type": "label",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "aria-label": "search city",
+                  "onChange": undefined,
+                  "type": "text",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+              null,
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Submit",
+                  "className": "waves-effect waves-light btn",
+                },
+                "ref": null,
+                "rendered": "Submit",
+                "type": "button",
+              },
+            ],
+            "type": "div",
+          },
+          "type": "div",
+        },
+        "type": "form",
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__childContext__): null,
+}
+`;
+
+exports[`should snapshot component snapshot with this.props.error true 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Search
+    error={true}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <form>
+        <div
+          className="row"
+        >
+          <div
+            className="input-field col s12"
+          >
+            <label>
+              City
+            </label>
+            <input
+              aria-label="search city"
+              type="text"
+            />
+            <span
+              className="helper-text red-text"
+            >
+              didn't find the city
+            </span>
+            <button
+              className="waves-effect waves-light btn"
+            >
+              Submit
+            </button>
+          </div>
+        </div>
+      </form>,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          className="row"
+        >
+          <div
+            className="input-field col s12"
+          >
+            <label>
+              City
+            </label>
+            <input
+              aria-label="search city"
+              type="text"
+            />
+            <span
+              className="helper-text red-text"
+            >
+              didn't find the city
+            </span>
+            <button
+              className="waves-effect waves-light btn"
+            >
+              Submit
+            </button>
+          </div>
+        </div>,
+        "onSubmit": undefined,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <div
+            className="input-field col s12"
+          >
+            <label>
+              City
+            </label>
+            <input
+              aria-label="search city"
+              type="text"
+            />
+            <span
+              className="helper-text red-text"
+            >
+              didn't find the city
+            </span>
+            <button
+              className="waves-effect waves-light btn"
+            >
+              Submit
+            </button>
+          </div>,
+          "className": "row",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <label>
+                City
+              </label>,
+              <input
+                aria-label="search city"
+                type="text"
+              />,
+              <span
+                className="helper-text red-text"
+              >
+                didn't find the city
+              </span>,
+              <button
+                className="waves-effect waves-light btn"
+              >
+                Submit
+              </button>,
+            ],
+            "className": "input-field col s12",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "City",
+              },
+              "ref": null,
+              "rendered": "City",
+              "type": "label",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "aria-label": "search city",
+                "onChange": undefined,
+                "type": "text",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "didn't find the city",
+                "className": "helper-text red-text",
+              },
+              "ref": null,
+              "rendered": "didn't find the city",
+              "type": "span",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Submit",
+                "className": "waves-effect waves-light btn",
+              },
+              "ref": null,
+              "rendered": "Submit",
+              "type": "button",
+            },
+          ],
+          "type": "div",
+        },
+        "type": "div",
+      },
+      "type": "form",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <form>
+          <div
+            className="row"
+          >
+            <div
+              className="input-field col s12"
+            >
+              <label>
+                City
+              </label>
+              <input
+                aria-label="search city"
+                type="text"
+              />
+              <span
+                className="helper-text red-text"
+              >
+                didn't find the city
+              </span>
+              <button
+                className="waves-effect waves-light btn"
+              >
+                Submit
+              </button>
+            </div>
+          </div>
+        </form>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <div
+            className="row"
+          >
+            <div
+              className="input-field col s12"
+            >
+              <label>
+                City
+              </label>
+              <input
+                aria-label="search city"
+                type="text"
+              />
+              <span
+                className="helper-text red-text"
+              >
+                didn't find the city
+              </span>
+              <button
+                className="waves-effect waves-light btn"
+              >
+                Submit
+              </button>
+            </div>
+          </div>,
+          "onSubmit": undefined,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <div
+              className="input-field col s12"
+            >
+              <label>
+                City
+              </label>
+              <input
+                aria-label="search city"
+                type="text"
+              />
+              <span
+                className="helper-text red-text"
+              >
+                didn't find the city
+              </span>
+              <button
+                className="waves-effect waves-light btn"
+              >
+                Submit
+              </button>
+            </div>,
+            "className": "row",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <label>
+                  City
+                </label>,
+                <input
+                  aria-label="search city"
+                  type="text"
+                />,
+                <span
+                  className="helper-text red-text"
+                >
+                  didn't find the city
+                </span>,
+                <button
+                  className="waves-effect waves-light btn"
+                >
+                  Submit
+                </button>,
+              ],
+              "className": "input-field col s12",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "City",
+                },
+                "ref": null,
+                "rendered": "City",
+                "type": "label",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "aria-label": "search city",
+                  "onChange": undefined,
+                  "type": "text",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "didn't find the city",
+                  "className": "helper-text red-text",
+                },
+                "ref": null,
+                "rendered": "didn't find the city",
+                "type": "span",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Submit",
+                  "className": "waves-effect waves-light btn",
+                },
+                "ref": null,
+                "rendered": "Submit",
+                "type": "button",
+              },
+            ],
+            "type": "div",
+          },
+          "type": "div",
+        },
+        "type": "form",
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__childContext__): null,
+}
+`;
