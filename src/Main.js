@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import Home from './components/Home'
 import Search from './components/Search'
-import ErrorBoundary from './components/ErrorBoundary'
 import {handleChangeCity, fetchWeather} from './actions.js'
 
 
