@@ -1,10 +1,30 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux'
 import Home from './components/Home'
 import Search from './components/Search'
 import ErrorBoundary from './components/ErrorBoundary'
+import {handleChangeCity, fetchWeather} from './actions.js'
 
 
-class Main extends Component {
+const mapStateToProps = (state) =>{
+  return{
+    city: state.handleChangeCity.city,
+    currentTemp: state.fetchWeather.currentTemp,
+    currentWeath: state.fetchWeather.currentWeath,
+    currentIcon: state.fetchWeather.currentIcon,
+    currentCity: state.fetchWeather.currentCity,
+    isPending: state.fetchWeather.isPending,
+    error: state.fetchWeather.error
+}}
+
+const mapDispatchToProps = (dispatch) =>{
+  return{
+    onHandleChangeCity: (event) =>dispatch(handleChangeCity(event.target.value)),
+    fetchWeather: () => dispatch(fetchWeather())
+  }
+}
+
+export class Main extends Component {
   state = {
     city: this.props.user.city,
     currentTemp: '',
@@ -16,110 +36,38 @@ class Main extends Component {
   }
     // fetch api 
   componentDidMount(){
-  fetch('https://weathers-server.herokuapp.com/getapi',{
-        method: 'post',
-        headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify({
-          city:this.state.city,
-        })
-      })
-    .then(res=> res.json())
-    .then(data=> {
-        console.log(data)
-        this.setState({
-          currentTemp: Math.floor(data.main.temp),
-          currentCity: data.name,
-          currentWeath: data.weather[0].main,
-          currentIcon: 'http://openweathermap.org/img/w/'+ data.weather[0].icon + '.png'
-        })
-    })
-    .catch(error=> {if(error){this.setState({err:true})}})
+    this.props.fetchWeather()
   
   }
   // fetch api on submitt
   handleSubmit = (e) =>{
     e.preventDefault()
-    fetch('https://weathers-server.herokuapp.com/getapi',{
-        method: 'post',
-        headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify({
-          city:this.state.city,
-        })
-      })
-      .then(res => res.json())
-      .then(data=> {
-        this.setState({
-          currentTemp: Math.floor(data.main.temp),
-          currentCity: data.name,
-          currentWeath: data.weather[0].main,
-          currentIcon: 'http://openweathermap.org/img/w/'+ data.weather[0].icon + '.png',
-          err:false
-        })
-      })
-        .catch(error=> this.setState({err:true}))
+    this.props.fetchWeather()
     }
 
-  handleChange = (e) =>{
-    this.setState({
-      city: e.target.value
-    })
-  }
 
-
-
-// the weather (mist, sunny, etc...) = data.weather[0].main
-
-
-
-// componentDidMount(){
-//     console.log(this.state)
-//   fetch('https://api.openweathermap.org/data/2.5/&APPID='+ id)
-//     .then(res => res.json())
-//     .then(data=> console.log(data) )
-//   }
-
-
-// put the diidnt find the city in the search component bitween the button and the input
   render() {
     
-    const home = 
-    this.state.currentCity?
-      <div>
-          <ErrorBoundary>
-            <Home 
-            city={this.state.currentCity}
-            currentTemp={this.state.currentTemp}
-            currentWeath={this.state.currentWeath}
-            currentIcon={this.state.currentIcon}
+    return (
+      <div className='container'>
+        <Home 
+            city={this.props.currentCity}
+            currentTemp={this.props.currentTemp}
+            currentWeath={this.props.currentWeath}
+            currentIcon={this.props.currentIcon}
             name={this.state.user.name}
+            isPending={this.props.isPending}
             />
 
             <Search 
             handleSubmit={this.handleSubmit}
-            handleChange={this.handleChange}
-            error={this.state.err}
+            handleChange={this.props.onHandleChangeCity}
+            error={this.props.error}
             />
-          </ErrorBoundary>
-        </div>
-        :
-         <div className=" preloader-wrapper small active">
-          <div className=" spinner-layer spinner-green-only">
-            <div className="circle-clipper left">
-              <div className="circle"></div>
-            </div><div className="gap-patch">
-              <div className="circle"></div>
-            </div><div className="circle-clipper right">
-              <div className="circle"></div>
-            </div>
-          </div>
-        </div>
-    return (
-      <div className='container'>
-        {home}
       </div>
       
     );
   }
 }
 
-export default Main;
+export default connect(mapStateToProps, mapDispatchToProps)(Main);

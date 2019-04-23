@@ -6,7 +6,8 @@ class Profile extends Component{
 		email: this.props.user.email,
 		name: this.props.user.name,
 		city: this.props.user.city,
-		isAuth: true
+		isAuth: true,
+		isSubmit:false
 	}
 
 
@@ -21,7 +22,7 @@ class Profile extends Component{
 		.then(data => data.json())
 		.then(user => {
 			if(!user.email){
-				return this.setState({isAuth:false})
+				 this.setState({isAuth:false})
 			}
 		})
 		.catch(err => this.setState({isAuth:false}))
@@ -49,12 +50,12 @@ class Profile extends Component{
 		.then(data => data.json())
 		.then(user => {
 			this.props.getUser(user)
-			this.setState({isAuth:false})
+			this.setState({isSubmit:true})
 		})
 	}
 
 	render(){
-		if(!this.state.isAuth){
+		if(!this.state.isAuth || this.state.isSubmit){
 			return(<Redirect to='/' />)}
 
 
