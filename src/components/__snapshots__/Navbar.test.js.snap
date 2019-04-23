@@ -1,0 +1,613 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot component should snapshot with user.length false 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Nav
+    user=""
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "brand": <NavLink
+        activeClassName="active"
+        aria-current="page"
+        to="/"
+      >
+        Weather App
+      </NavLink>,
+      "children": <div>
+        <NavItem>
+          <NavLink
+            activeClassName="active"
+            aria-current="page"
+            to="/register"
+          >
+            Register
+          </NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink
+            activeClassName="active"
+            aria-current="page"
+            to="/signin"
+          >
+            Sign In
+          </NavLink>
+        </NavItem>
+      </div>,
+      "className": "blue",
+      "href": "/",
+      "options": Object {},
+      "right": true,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <NavItem>
+            <NavLink
+              activeClassName="active"
+              aria-current="page"
+              to="/register"
+            >
+              Register
+            </NavLink>
+          </NavItem>,
+          <NavItem>
+            <NavLink
+              activeClassName="active"
+              aria-current="page"
+              to="/signin"
+            >
+              Sign In
+            </NavLink>
+          </NavItem>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": <NavLink
+              activeClassName="active"
+              aria-current="page"
+              to="/register"
+            >
+              Register
+            </NavLink>,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "activeClassName": "active",
+              "aria-current": "page",
+              "children": "Register",
+              "to": "/register",
+            },
+            "ref": null,
+            "rendered": "Register",
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": <NavLink
+              activeClassName="active"
+              aria-current="page"
+              to="/signin"
+            >
+              Sign In
+            </NavLink>,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "activeClassName": "active",
+              "aria-current": "page",
+              "children": "Sign In",
+              "to": "/signin",
+            },
+            "ref": null,
+            "rendered": "Sign In",
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "brand": <NavLink
+          activeClassName="active"
+          aria-current="page"
+          to="/"
+        >
+          Weather App
+        </NavLink>,
+        "children": <div>
+          <NavItem>
+            <NavLink
+              activeClassName="active"
+              aria-current="page"
+              to="/register"
+            >
+              Register
+            </NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink
+              activeClassName="active"
+              aria-current="page"
+              to="/signin"
+            >
+              Sign In
+            </NavLink>
+          </NavItem>
+        </div>,
+        "className": "blue",
+        "href": "/",
+        "options": Object {},
+        "right": true,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <NavItem>
+              <NavLink
+                activeClassName="active"
+                aria-current="page"
+                to="/register"
+              >
+                Register
+              </NavLink>
+            </NavItem>,
+            <NavItem>
+              <NavLink
+                activeClassName="active"
+                aria-current="page"
+                to="/signin"
+              >
+                Sign In
+              </NavLink>
+            </NavItem>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": <NavLink
+                activeClassName="active"
+                aria-current="page"
+                to="/register"
+              >
+                Register
+              </NavLink>,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "activeClassName": "active",
+                "aria-current": "page",
+                "children": "Register",
+                "to": "/register",
+              },
+              "ref": null,
+              "rendered": "Register",
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": <NavLink
+                activeClassName="active"
+                aria-current="page"
+                to="/signin"
+              >
+                Sign In
+              </NavLink>,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "activeClassName": "active",
+                "aria-current": "page",
+                "children": "Sign In",
+                "to": "/signin",
+              },
+              "ref": null,
+              "rendered": "Sign In",
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`snapshot component should snapshot with user.length true 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Nav
+    user="ser"
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "brand": <NavLink
+        activeClassName="active"
+        aria-current="page"
+        to="/"
+      >
+        Weather App
+      </NavLink>,
+      "children": <div>
+        <NavItem>
+          <NavLink
+            activeClassName="active"
+            aria-current="page"
+            to="/profile"
+          >
+            Profile
+          </NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink
+            activeClassName="active"
+            aria-current="page"
+            to="/signout"
+          >
+            Signout
+          </NavLink>
+        </NavItem>
+      </div>,
+      "className": "blue",
+      "href": "/",
+      "options": Object {},
+      "right": true,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <NavItem>
+            <NavLink
+              activeClassName="active"
+              aria-current="page"
+              to="/profile"
+            >
+              Profile
+            </NavLink>
+          </NavItem>,
+          <NavItem>
+            <NavLink
+              activeClassName="active"
+              aria-current="page"
+              to="/signout"
+            >
+              Signout
+            </NavLink>
+          </NavItem>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": <NavLink
+              activeClassName="active"
+              aria-current="page"
+              to="/profile"
+            >
+              Profile
+            </NavLink>,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "activeClassName": "active",
+              "aria-current": "page",
+              "children": "Profile",
+              "to": "/profile",
+            },
+            "ref": null,
+            "rendered": "Profile",
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": <NavLink
+              activeClassName="active"
+              aria-current="page"
+              to="/signout"
+            >
+              Signout
+            </NavLink>,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "activeClassName": "active",
+              "aria-current": "page",
+              "children": "Signout",
+              "to": "/signout",
+            },
+            "ref": null,
+            "rendered": "Signout",
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "brand": <NavLink
+          activeClassName="active"
+          aria-current="page"
+          to="/"
+        >
+          Weather App
+        </NavLink>,
+        "children": <div>
+          <NavItem>
+            <NavLink
+              activeClassName="active"
+              aria-current="page"
+              to="/profile"
+            >
+              Profile
+            </NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink
+              activeClassName="active"
+              aria-current="page"
+              to="/signout"
+            >
+              Signout
+            </NavLink>
+          </NavItem>
+        </div>,
+        "className": "blue",
+        "href": "/",
+        "options": Object {},
+        "right": true,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <NavItem>
+              <NavLink
+                activeClassName="active"
+                aria-current="page"
+                to="/profile"
+              >
+                Profile
+              </NavLink>
+            </NavItem>,
+            <NavItem>
+              <NavLink
+                activeClassName="active"
+                aria-current="page"
+                to="/signout"
+              >
+                Signout
+              </NavLink>
+            </NavItem>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": <NavLink
+                activeClassName="active"
+                aria-current="page"
+                to="/profile"
+              >
+                Profile
+              </NavLink>,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "activeClassName": "active",
+                "aria-current": "page",
+                "children": "Profile",
+                "to": "/profile",
+              },
+              "ref": null,
+              "rendered": "Profile",
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": <NavLink
+                activeClassName="active"
+                aria-current="page"
+                to="/signout"
+              >
+                Signout
+              </NavLink>,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "activeClassName": "active",
+                "aria-current": "page",
+                "children": "Signout",
+                "to": "/signout",
+              },
+              "ref": null,
+              "rendered": "Signout",
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

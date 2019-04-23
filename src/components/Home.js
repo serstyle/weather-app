@@ -6,9 +6,9 @@ class Home extends React.Component{
 		<div className="row">
 			    <div className="col s12 m5">
 			      <div className="card-panel blue">
-			        <span className="white-text">{this.props.city} <img alt='weather-icon' src={this.props.currentIcon} /> </span>
-			        <p className="white-text"> {this.props.currentTemp}C </p>
-			        <p className="white-text"> {this.props.currentWeath} </p>
+			        <span id='showCity' className="white-text">{this.props.city} <img alt='weather-icon' src={this.props.currentIcon} /> </span>
+			        <p id='showCurrentTemp' className="white-text"> {this.props.currentTemp}C </p>
+			        <p id='showCurrentWeather' className="white-text"> {this.props.currentWeath} </p>
 			      </div>
 			    </div>
 			  </div>
@@ -26,8 +26,9 @@ class Home extends React.Component{
   		        </div>)
 
 		const isAuth = this.props.name.length ?
-			<div>
+			<div className='auth'>
 				<h1>Welcome {this.props.name} </h1>
+				
 			</div> :
 					<div>
 						<h3 className='center'>Welcome, </h3>
@@ -43,15 +44,3 @@ class Home extends React.Component{
 }
 
 export default Home;
-
-
-// in class bc i wanted to try componentdidcatch
-
-// const Home = ( { currentTemp, city }) =>{
-// 	return(
-// 		<div>
-// 			<h1>Welcome</h1>
-// 			<p> The current weather is : {currentTemp} </p>
-// 		</div>
-// 		)
-// }

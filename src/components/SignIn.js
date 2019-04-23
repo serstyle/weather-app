@@ -40,7 +40,7 @@ class SignIn extends Component{
 	}
 
 	render(){
-		if(this.state.isAuth){return (<Redirect to='/weather-app' />)};
+		if(this.state.isAuth){return (<Redirect to='/' />)};
 
 		return(
 		<div className='container row'>

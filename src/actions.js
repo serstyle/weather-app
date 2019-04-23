@@ -19,6 +19,8 @@ export const fetchWeather = () => (dispatch, getState) =>{
         })
       })
 	.then(res => res.json())
-	.then(data=> dispatch({type:REQUEST_WEATHER_SUCCESS, payload: data}))
+	.then(data=>{
+		console.log(data)
+		dispatch({type:REQUEST_WEATHER_SUCCESS, payload: data})})
 	.catch(err=> dispatch({type: REQUEST_WEATHER_FAILED, payload: err}))
 }

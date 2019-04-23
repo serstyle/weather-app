@@ -16,7 +16,7 @@ class SignOut extends React.Component{
 
 
 	render(){
-		return(<Redirect to='/weather-app' />)
+		return(<Redirect to='/' />)
 	}
 }
 

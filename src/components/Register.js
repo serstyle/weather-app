@@ -17,7 +17,7 @@ class Register extends Component{
 		})
 	}
 
-	handleSumbit = (e) => {
+	handleSubmit = (e) => {
 		e.preventDefault()
 		const { email, password, city, name} = this.state
 		fetch('https://weathers-server.herokuapp.com/register', {
@@ -39,13 +39,13 @@ class Register extends Component{
 
 	render(){
 		if(this.state.isAuth){
-			return(<Redirect to='/weather-app' />)}
+			return(<Redirect to='/' />)}
 
 
 		return(
 		<div className='container row'>
 			<h3> Register : </h3>
-			<form onSubmit={this.handleSumbit} className='col s12'>
+			<form onSubmit={this.handleSubmit} className='col s12'>
 				<div className="row">
 			        <div className="input-field col s12">
 			          <input onChange={this.handleChange} required id="email" type="email" className="validate" />

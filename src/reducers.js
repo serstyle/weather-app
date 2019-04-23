@@ -42,5 +42,5 @@ export const fetchWeather = (state=weatherState, action={}) =>{
 			return Object.assign({}, state, {isPending:false, error: data})
 		default:
 			return state
-	};
+	}
 };

@@ -24,7 +24,7 @@ const mapDispatchToProps = (dispatch) =>{
   }
 }
 
-class Main extends Component {
+export class Main extends Component {
   state = {
     city: this.props.user.city,
     currentTemp: '',
@@ -37,14 +37,12 @@ class Main extends Component {
     // fetch api 
   componentDidMount(){
     this.props.fetchWeather()
-    console.log(this.props.isPending)
   
   }
   // fetch api on submitt
   handleSubmit = (e) =>{
     e.preventDefault()
     this.props.fetchWeather()
-    console.log(this.props.isPending)
     }
 
 
