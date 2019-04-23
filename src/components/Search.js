@@ -7,7 +7,7 @@ class Search extends React.Component{
 				<div className="row">
 			        <div className="input-field col s12">
 						<label>City</label>
-						<input onChange={this.props.handleChange}type='text' />
+						<input aria-label='search city' onChange={this.props.handleChange}type='text' />
 						{this.props.error?<span className="helper-text red-text">didn't find the city</span>: null}
 						<button className='waves-effect waves-light btn'>Submit</button>
 					</div>
