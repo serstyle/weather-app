@@ -109,12 +109,12 @@ ShallowWrapper {
                 aria-label="search city"
                 type="text"
               />,
-              null,
               <button
                 className="waves-effect waves-light btn"
               >
                 Submit
               </button>,
+              null,
             ],
             "className": "input-field col s12",
           },
@@ -144,7 +144,6 @@ ShallowWrapper {
               "rendered": null,
               "type": "input",
             },
-            null,
             Object {
               "instance": null,
               "key": undefined,
@@ -157,6 +156,7 @@ ShallowWrapper {
               "rendered": "Submit",
               "type": "button",
             },
+            null,
           ],
           "type": "div",
         },
@@ -261,12 +261,12 @@ ShallowWrapper {
                   aria-label="search city"
                   type="text"
                 />,
-                null,
                 <button
                   className="waves-effect waves-light btn"
                 >
                   Submit
                 </button>,
+                null,
               ],
               "className": "input-field col s12",
             },
@@ -296,7 +296,6 @@ ShallowWrapper {
                 "rendered": null,
                 "type": "input",
               },
-              null,
               Object {
                 "instance": null,
                 "key": undefined,
@@ -309,6 +308,7 @@ ShallowWrapper {
                 "rendered": "Submit",
                 "type": "button",
               },
+              null,
             ],
             "type": "div",
           },
@@ -381,16 +381,21 @@ ShallowWrapper {
               aria-label="search city"
               type="text"
             />
-            <span
-              className="helper-text red-text"
-            >
-              didn't find the city
-            </span>
             <button
               className="waves-effect waves-light btn"
             >
               Submit
             </button>
+            <span
+              className="helper-text red-text"
+              style={
+                Object {
+                  "marginLeft": "10px",
+                }
+              }
+            >
+              didn't find the city
+            </span>
           </div>
         </div>
       </form>,
@@ -414,16 +419,21 @@ ShallowWrapper {
               aria-label="search city"
               type="text"
             />
-            <span
-              className="helper-text red-text"
-            >
-              didn't find the city
-            </span>
             <button
               className="waves-effect waves-light btn"
             >
               Submit
             </button>
+            <span
+              className="helper-text red-text"
+              style={
+                Object {
+                  "marginLeft": "10px",
+                }
+              }
+            >
+              didn't find the city
+            </span>
           </div>
         </div>,
         "onSubmit": undefined,
@@ -444,16 +454,21 @@ ShallowWrapper {
               aria-label="search city"
               type="text"
             />
-            <span
-              className="helper-text red-text"
-            >
-              didn't find the city
-            </span>
             <button
               className="waves-effect waves-light btn"
             >
               Submit
             </button>
+            <span
+              className="helper-text red-text"
+              style={
+                Object {
+                  "marginLeft": "10px",
+                }
+              }
+            >
+              didn't find the city
+            </span>
           </div>,
           "className": "row",
         },
@@ -471,16 +486,21 @@ ShallowWrapper {
                 aria-label="search city"
                 type="text"
               />,
-              <span
-                className="helper-text red-text"
-              >
-                didn't find the city
-              </span>,
               <button
                 className="waves-effect waves-light btn"
               >
                 Submit
               </button>,
+              <span
+                className="helper-text red-text"
+                style={
+                  Object {
+                    "marginLeft": "10px",
+                  }
+                }
+              >
+                didn't find the city
+              </span>,
             ],
             "className": "input-field col s12",
           },
@@ -515,24 +535,27 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "didn't find the city",
-                "className": "helper-text red-text",
-              },
-              "ref": null,
-              "rendered": "didn't find the city",
-              "type": "span",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
                 "children": "Submit",
                 "className": "waves-effect waves-light btn",
               },
               "ref": null,
               "rendered": "Submit",
               "type": "button",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "didn't find the city",
+                "className": "helper-text red-text",
+                "style": Object {
+                  "marginLeft": "10px",
+                },
+              },
+              "ref": null,
+              "rendered": "didn't find the city",
+              "type": "span",
             },
           ],
           "type": "div",
@@ -563,16 +586,21 @@ ShallowWrapper {
                 aria-label="search city"
                 type="text"
               />
-              <span
-                className="helper-text red-text"
-              >
-                didn't find the city
-              </span>
               <button
                 className="waves-effect waves-light btn"
               >
                 Submit
               </button>
+              <span
+                className="helper-text red-text"
+                style={
+                  Object {
+                    "marginLeft": "10px",
+                  }
+                }
+              >
+                didn't find the city
+              </span>
             </div>
           </div>
         </form>,
@@ -596,16 +624,21 @@ ShallowWrapper {
                 aria-label="search city"
                 type="text"
               />
-              <span
-                className="helper-text red-text"
-              >
-                didn't find the city
-              </span>
               <button
                 className="waves-effect waves-light btn"
               >
                 Submit
               </button>
+              <span
+                className="helper-text red-text"
+                style={
+                  Object {
+                    "marginLeft": "10px",
+                  }
+                }
+              >
+                didn't find the city
+              </span>
             </div>
           </div>,
           "onSubmit": undefined,
@@ -626,16 +659,21 @@ ShallowWrapper {
                 aria-label="search city"
                 type="text"
               />
-              <span
-                className="helper-text red-text"
-              >
-                didn't find the city
-              </span>
               <button
                 className="waves-effect waves-light btn"
               >
                 Submit
               </button>
+              <span
+                className="helper-text red-text"
+                style={
+                  Object {
+                    "marginLeft": "10px",
+                  }
+                }
+              >
+                didn't find the city
+              </span>
             </div>,
             "className": "row",
           },
@@ -653,16 +691,21 @@ ShallowWrapper {
                   aria-label="search city"
                   type="text"
                 />,
-                <span
-                  className="helper-text red-text"
-                >
-                  didn't find the city
-                </span>,
                 <button
                   className="waves-effect waves-light btn"
                 >
                   Submit
                 </button>,
+                <span
+                  className="helper-text red-text"
+                  style={
+                    Object {
+                      "marginLeft": "10px",
+                    }
+                  }
+                >
+                  didn't find the city
+                </span>,
               ],
               "className": "input-field col s12",
             },
@@ -697,24 +740,27 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "didn't find the city",
-                  "className": "helper-text red-text",
-                },
-                "ref": null,
-                "rendered": "didn't find the city",
-                "type": "span",
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
                   "children": "Submit",
                   "className": "waves-effect waves-light btn",
                 },
                 "ref": null,
                 "rendered": "Submit",
                 "type": "button",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "didn't find the city",
+                  "className": "helper-text red-text",
+                  "style": Object {
+                    "marginLeft": "10px",
+                  },
+                },
+                "ref": null,
+                "rendered": "didn't find the city",
+                "type": "span",
               },
             ],
             "type": "div",

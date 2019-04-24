@@ -8,8 +8,8 @@ class Search extends React.Component{
 			        <div className="input-field col s12">
 						<label>City</label>
 						<input aria-label='search city' onChange={this.props.handleChange}type='text' />
-						{this.props.error?<span className="helper-text red-text">didn't find the city</span>: null}
 						<button className='waves-effect waves-light btn'>Submit</button>
+						{this.props.error?<span style={{marginLeft:'10px'}} className="helper-text red-text">didn't find the city</span>: null}
 					</div>
 				</div>	
 			</form>

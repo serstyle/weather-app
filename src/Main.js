@@ -13,13 +13,13 @@ const mapStateToProps = (state) =>{
     currentIcon: state.fetchWeather.currentIcon,
     currentCity: state.fetchWeather.currentCity,
     isPending: state.fetchWeather.isPending,
-    error: state.fetchWeather.error
+    error: state.fetchWeather.isError
 }}
 
 const mapDispatchToProps = (dispatch) =>{
   return{
     onHandleChangeCity: (event) =>dispatch(handleChangeCity(event.target.value)),
-    fetchWeather: () => dispatch(fetchWeather())
+    fetchWeather: (city) => dispatch(fetchWeather(city))
   }
 }
 
@@ -35,7 +35,7 @@ export class Main extends Component {
   }
     // fetch api 
   componentDidMount(){
-    this.props.fetchWeather()
+    this.props.fetchWeather(this.state.user.city)
   
   }
   // fetch api on submitt

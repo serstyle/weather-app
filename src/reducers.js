@@ -21,7 +21,7 @@ const weatherState = {
     currentIcon: '',
     currentCity: '',
     isPending: false,
-    error: ''
+    isError: false
 }
 
 
@@ -30,16 +30,17 @@ export const fetchWeather = (state=weatherState, action={}) =>{
 	const data = action.payload;
 	switch(action.type){
 		case REQUEST_WEATHER_PENDING:
-			return Object.assign({}, state, {isPending:true});
+			return Object.assign({}, state, {isPending:true, isError: false});
 		case REQUEST_WEATHER_SUCCESS:
 			return Object.assign({}, state, {
 				currentTemp: Math.floor(data.main.temp),
 				currentCity: data.name,
 				currentWeath: data.weather[0].main,
 				currentIcon: 'http://openweathermap.org/img/w/'+ data.weather[0].icon + '.png',
-				isPending:false});
+				isPending:false,
+				isError: false});
 		case REQUEST_WEATHER_FAILED:
-			return Object.assign({}, state, {isPending:false, error: data})
+			return Object.assign({}, state, {isPending:false, isError: true})
 		default:
 			return state
 	}

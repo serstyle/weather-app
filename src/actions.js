@@ -9,13 +9,14 @@ export const handleChangeCity = (text) => ({
 
 
 
-export const fetchWeather = () => (dispatch, getState) =>{
+export const fetchWeather = (city) => (dispatch, getState) =>{
+	const currentCity = city? city: getState().handleChangeCity.city
 	dispatch({type: REQUEST_WEATHER_PENDING})
 	fetch('https://weathers-server.herokuapp.com/getapi',{
         method: 'post',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({
-          city:getState().handleChangeCity.city,
+          city:currentCity
         })
       })
 	.then(res => res.json())
