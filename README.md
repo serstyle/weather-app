@@ -4,7 +4,7 @@ A simple web app which let users to search for the weather of a city. They can a
 
 The front end is deploy on netlify and the back end on heroku.
 
-**Live on :** https://weather-app1337.netlify.com/
+**Live on : ** https://weather-app1337.netlify.com/
 
 **backend repo :** https://github.com/serstyle/weathers-server
 
